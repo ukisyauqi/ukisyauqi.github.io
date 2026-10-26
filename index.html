@@ -1,1042 +1,749 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>CV Muhamad Syauqi Fadhlika</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <meta name="description" content="CV Muhamad Syauqi Fadhlika" />
-  <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
-  <meta name="author" content="lmpixels" />
-  <link rel="shortcut icon" href="favicon.ico">
-
-
-  <link rel="stylesheet" href="css/reset.css" type="text/css">
-  <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
-  <link rel="stylesheet" href="css/animations.css" type="text/css">
-  <link rel="stylesheet" href="css/perfect-scrollbar.css" type="text/css">
-  <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
-  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-  <link rel="stylesheet" href="css/main.css" type="text/css">
-</head>
-
-<body>
-  <!-- Animated Background -->
-  <div class="lm-animated-bg" style="background-image: url(img/main_bg.png);"></div>
-  <!-- /Animated Background -->
-
-  <!-- Loading animation -->
-  <div class="preloader">
-    <div class="preloader-animation">
-      <div class="preloader-spinner">
-      </div>
-    </div>
-  </div>
-  <!-- /Loading animation -->
-
-  <div class="page">
-    <div class="page-content">
-
-      <header id="site_header" class="header mobile-menu-hide">
-        <div class="header-content">
-          <div class="header-photo">
-            <img src="img/main_photo.jpg" alt="Alex Smith">
-          </div>
-          <div class="header-titles">
-            <h2>M. Syauqi Fadhlika</h2>
-            <h4>Web Developer</h4>
-          </div>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Muhamad Syauqi Fadhlika — Frontend / Fullstack Developer</title>
+        <meta
+            name="description"
+            content="Portfolio of Muhamad Syauqi Fadhlika (uki) — Frontend / Fullstack Developer specializing in React, Next.js, TypeScript, React Native, PostgreSQL and AI integration. Based in Bandung, Indonesia."
+        />
+        <meta name="author" content="Muhamad Syauqi Fadhlika" />
+        <meta name="theme-color" content="#0a0a0c" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <meta
+            property="og:title"
+            content="Muhamad Syauqi Fadhlika — Frontend / Fullstack Developer"
+        />
+        <meta
+            property="og:description"
+            content="I build fast, delightful web & mobile products. React • Next.js • TypeScript • React Native • PostgreSQL • AI."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://ukisyauqi.github.io" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <noscript
+            ><style>
+                .reveal {
+                    opacity: 1 !important;
+                    transform: none !important;
+                }
+            </style></noscript
+        >
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Muhamad Syauqi Fadhlika",
+                "jobTitle": "Frontend / Fullstack Developer",
+                "email": "mailto:ukisyauqi@gmail.com",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Bandung",
+                    "addressCountry": "ID"
+                },
+                "url": "https://ukisyauqi.github.io",
+                "sameAs": [
+                    "https://github.com/ukisyauqi",
+                    "https://www.linkedin.com/in/muhamad-syauqi-fadhlika/"
+                ]
+            }
+        </script>
+    </head>
+    <body>
+        <div class="noise" aria-hidden="true"></div>
+        <div class="scroll-progress" aria-hidden="true">
+            <div id="scrollFill"></div>
         </div>
 
-        <ul class="main-menu">
-          <li class="active">
-            <a href="#home" class="nav-anim">
-              <span class="menu-icon lnr lnr-home"></span>
-              <span class="link-text">Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="#about-me" class="nav-anim">
-              <span class="menu-icon lnr lnr-user"></span>
-              <span class="link-text">About Me</span>
-            </a>
-          </li>
-          <li>
-            <a href="#resume" class="nav-anim">
-              <span class="menu-icon lnr lnr-graduation-hat"></span>
-              <span class="link-text">Resume</span>
-            </a>
-          </li>
-          <li>
-            <a href="#portfolio" class="nav-anim">
-              <span class="menu-icon lnr lnr-briefcase"></span>
-              <span class="link-text">Portfolio</span>
-            </a>
-          </li>
-          <li>
-            <a href="#contact" class="nav-anim">
-              <span class="menu-icon lnr lnr-envelope"></span>
-              <span class="link-text">Contact</span>
-            </a>
-          </li>
-        </ul>
-
-        <div class="header-buttons">
-          <a href="https://drive.google.com/file/d/1q0Qdt4aJJHhoy7OCOiXtdQtws8Zr_tkk/view?usp=sharing" target="_blank"
-            class="btn btn-primary">Download CV</a>
+        <!-- NAV -->
+        <header id="nav">
+            <a href="#top" class="brand">uki<span>.dev</span></a>
+            <nav class="links" aria-label="Primary">
+                <a href="#work">Work</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Stack</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-right">
+                <span class="status"><i class="pulse"></i> Open to work</span>
+                <a
+                    class="btn btn-sm"
+                    href="mailto:ukisyauqi@gmail.com?subject=Hiring%20—%20Frontend%20Developer"
+                   
+                    >Hire me ↗</a
+                >
+                <button id="menuBtn" aria-label="Open menu">☰</button>
+            </div>
+        </header>
+        <div id="mobileMenu">
+            <button id="menuClose" aria-label="Close menu">✕</button>
+            <a href="#work">Work</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Stack</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
         </div>
 
-        <div class="copyrights">© 2022 Muhamad Syauqi Fadhlika.</div>
-      </header>
-
-      <!-- Mobile Navigation -->
-      <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <!-- End Mobile Navigation -->
-
-      <!-- Arrows Nav -->
-      <div class="lmpixels-arrows-nav">
-        <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
-        <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
-      </div>
-      <!-- End Arrows Nav -->
-
-      <div class="content-area">
-        <div class="animated-sections">
-          <!-- Home Subpage -->
-          <section data-id="home" class="animated-section start-page">
-            <div class="section-content vcentered">
-
-              <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                  <div class="title-block">
-                    <h2>Muhamad Syauqi Fadhlika</h2>
-                    <div class="owl-carousel text-rotation">
-                      <div class="item">
-                        <div class="sp-subtitle">Frontend-developer</div>
-                      </div>
-
-                      <div class="item">
-                        <div class="sp-subtitle">IoT Engineer</div>
-                      </div>
+        <main id="top">
+            <!-- HERO -->
+            <section class="hero">
+                <canvas id="gl" aria-hidden="true"></canvas>
+                <div class="hero-calm" aria-hidden="true"></div>
+                <div class="hero-inner">
+                    <p class="eyebrow reveal">
+                        ● Bandung, ID — <span id="clock">--:--</span> WIB
+                        &nbsp;·&nbsp; Available immediately
+                    </p>
+                    <h1 class="mega">
+                        <span class="line reveal">MUHAMAD</span>
+                        <span class="line outline reveal">SYAUQI</span>
+                        <span class="line reveal"
+                            >FADHLIKA<i class="lime">.</i></span
+                        >
+                    </h1>
+                    <p class="role-line reveal">
+                        I build <span id="typer">React apps</span
+                        ><span class="caret">▌</span>
+                    </p>
+                    <p class="lede reveal">
+                        Frontend / Fullstack Developer with ~2 years shipping
+                        e-commerce, SaaS, mobile & AI products. React · Next.js
+                        · TypeScript · React Native · PostgreSQL — from pixel to
+                        production.
+                    </p>
+                    <div class="cta-row reveal">
+                        <a class="btn btn-lime" href="#work"
+                            >View selected work ↓</a
+                        >
+                        <a
+                            class="btn btn-ghost"
+                            href="mailto:ukisyauqi@gmail.com"
+                           
+                            >ukisyauqi@gmail.com</a
+                        >
                     </div>
-                  </div>
+                    <div class="stats reveal">
+                        <div>
+                            <strong data-count="2">0</strong
+                            ><span>yrs experience</span>
+                        </div>
+                        <div>
+                            <strong data-count="12">0</strong
+                            ><span>projects shipped</span>
+                        </div>
+                        <div>
+                            <strong data-count="4">0</strong
+                            ><span>bootcamps & certs</span>
+                        </div>
+                        <div>
+                            <strong data-count="6">0</strong
+                            ><span>live products</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-
-            </div>
-          </section>
-          <!-- End of Home Subpage -->
-
-          <!-- About Me Subpage -->
-          <section data-id="about-me" class="animated-section">
-            <div class="section-content">
-              <div class="page-title">
-                <h2>About <span>Me</span></h2>
-              </div>
-
-              <!-- Personal Information -->
-              <div class="row">
-                <div class="col-xs-12 col-sm-7">
-                  <p>Saya adalah pengembang web
-                    pemula yang memiliki kemauan tinggi
-                    untuk mempelajari hal-hal baru. Aktif
-                    berorganisasi dan senang mengikuti
-                    pelatihan pengembangan web dan
-                    aplikasi android.
-                  </p>
+                <div class="hero-side" aria-hidden="true">
+                    <span>SCROLL</span><i></i>
                 </div>
-
-                <div class="col-xs-12 col-sm-5">
-                  <div class="info-list">
-                    <ul>
-                      <li>
-                        <span class="title">Age</span>
-                        <span class="value">21</span>
-                      </li>
-
-                      <li>
-                        <span class="title">Address</span>
-                        <span class="value">Majalengka, Jawa Barat</span>
-                      </li>
-
-                      <li>
-                        <span class="title">e-mail</span>
-                        <span class="value">ukisyauqi@gmail.com</span>
-                      </li>
-
-                      <li>
-                        <span class="title">Phone</span>
-                        <span class="value">0823 7577 9665</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- End of Personal Information -->
-
-              <div class="white-space-50"></div>
-
-              <!-- Services -->
-              <div class="row">
-                <div class="col-xs-12 col-sm-12">
-                  <div class="block-title">
-                    <h3>My <span>Skills</span></h3>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                  <div class="col-inner">
-                    <div class="info-list-w-icon">
-                      <div class="info-block-w-icon">
-                        <div class="ci-icon">
-                          <?xml version="1.0" encoding="utf-8"?>
-                          <!-- Svg Vector Icons : http://www.onlinewebfonts.com/icon -->
-                          <!DOCTYPE svg
-                            PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                          <svg version="1.1" fill="#55BF9F" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
-                            enable-background="new 0 0 1000 1000" xml:space="preserve">
-                            <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
-                            <g>
-                              <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                <div class="badges">
+                    <span
+                        ><svg viewBox="0 0 24 24" aria-hidden="true">
+                            <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                            >
+                                <ellipse cx="12" cy="12" rx="10" ry="4" />
+                                <ellipse
+                                    cx="12"
+                                    cy="12"
+                                    rx="10"
+                                    ry="4"
+                                    transform="rotate(60 12 12)"
+                                />
+                                <ellipse
+                                    cx="12"
+                                    cy="12"
+                                    rx="10"
+                                    ry="4"
+                                    transform="rotate(120 12 12)"
+                                />
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="1.4"
+                                    fill="currentColor"
+                                    stroke="none"
+                                />
+                            </g></svg
+                        >React</span
+                    ><span
+                        ><svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M12 4 20 19H4Z"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linejoin="round"
+                            /></svg
+                        >Next.js</span
+                    ><span
+                        ><svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect
+                                x="3.5"
+                                y="3.5"
+                                width="17"
+                                height="17"
+                                rx="4"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            />
+                            <path
+                                d="M8 8.5h8M12 8.5v7"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                            /></svg
+                        >TS</span
+                    ><span
+                        ><svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect
+                                x="7"
+                                y="2.5"
+                                width="10"
+                                height="19"
+                                rx="2.5"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            />
+                            <line
+                                x1="10.5"
+                                y1="18.5"
+                                x2="13.5"
+                                y2="18.5"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                            /></svg
+                        >RN</span
+                    ><span
+                        ><svg viewBox="0 0 24 24" aria-hidden="true">
+                            <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <ellipse cx="12" cy="5.5" rx="7" ry="2.8" />
                                 <path
-                                  d="M5920.9,3184.1c-145.5-47-275.4-150-331.4-259.7c-11.2-24.6-497.1-1222.5-1079.2-2664.5c-1139.7-2819-1108.3-2727.2-1025.5-2922c161.2-378.4,678.4-425.4,900.1-82.9c17.9,26.9,512.7,1236,1097.1,2684.6C6624,2765.4,6597.1,2687.1,6518.7,2875.2c-44.8,105.2-143.3,212.7-244.1,264.2C6176.2,3190.9,6003.8,3211,5920.9,3184.1z" />
+                                    d="M5 5.5v13c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8v-13"
+                                />
                                 <path
-                                  d="M2356.3,2425.1C2230.9,2366.9,197.9,340.5,144.1,219.6C81.4,85.3,85.9-75.9,155.3-212.5c73.9-147.8,2033.1-2107,2180.9-2180.9c141.1-69.4,360.5-58.2,492.6,29.1c138.8,91.8,210.5,217.2,221.7,385.1c15.7,255.3,33.6,232.9-882.2,1153.1L1330.8,13.6l817.3,817.3c526.2,526.2,835.2,850.8,862,909.1c116.4,237.3,15.7,539.6-221.7,662.8C2647.4,2476.6,2483.9,2485.6,2356.3,2425.1z" />
-                                <path
-                                  d="M7217.3,2404.9c-215-112-322.4-342.6-264.2-579.9c24.6-103,76.1-159,862-949.4c461.3-463.5,837.4-850.8,837.4-862.1c0-13.4-362.7-385.1-808.3-828.5c-450.1-450-828.4-846.4-855.3-895.6c-98.5-183.6-49.3-445.6,112-597.8c132.1-125.4,365-167.9,539.6-96.3c56,24.6,412,365,1141.9,1092.7c947.1,947.1,1061.3,1068,1092.7,1166.6c40.3,120.9,31.4,262-24.6,380.6c-17.9,38.1-510.5,546.3-1092.7,1126.3c-897.9,897.9-1070.3,1059.1-1146.4,1079.2C7463.6,2481.1,7349.4,2469.9,7217.3,2404.9z" />
-                              </g>
-                            </g>
-                          </svg>
-                        </div>
-                        <div class="ci-text">
-                          <h4>HTML CSS JavaScript</h4>
-                          <p>Basic HTML, Semantic HTML, Form and Validation, Positioning, CSS grid, Flex Box, Responsive
-                            Design, JavaScript ES6, Asyncronous, Fetch API, DOM Manipulation, Firebase</p>
-                        </div>
-                      </div>
-                      <div class="info-block-w-icon">
-                        <div class="ci-icon">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="-11.5 -10.23174 23 20.46348">
-                            <circle cx="0" cy="0" r="2.05" fill="#55BF9F" />
-                            <g stroke="#55BF9F" stroke-width="1" fill="none">
-                              <ellipse rx="11" ry="4.2" />
-                              <ellipse rx="11" ry="4.2" transform="rotate(60)" />
-                              <ellipse rx="11" ry="4.2" transform="rotate(120)" />
-                            </g>
-                          </svg>
-
-                        </div>
-                        <div class="ci-text">
-                          <h4>React JS</h4>
-                          <p>Chakra UI, Component & Props, State & Component Lifecycle, Hooks, REST API with Axios,
-                            Context, React Router</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6">
-                  <div class="col-inner">
-                    <div class="info-list-w-icon">
-                      <div class="info-block-w-icon">
-                        <div class="ci-icon">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="32.163 68.509 203.691 228.155">
+                                    d="M5 12c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8"
+                                />
+                            </g></svg
+                        >PG</span
+                    ><span
+                        ><svg viewBox="0 0 24 24" aria-hidden="true">
                             <path
-                              d="M101.885 207.092c7.865 0 14.241 6.376 14.241 14.241v61.09c0 7.865-6.376 14.24-14.241 14.24-7.864 0-14.24-6.375-14.24-14.24v-61.09c0-7.864 6.376-14.24 14.24-14.24z"
-                              fill="#55BF9F" />
+                                d="M12 3.5 13.7 9l5.8 1.7-5.8 1.7L12 18l-1.7-5.6L4.5 10.7 10.3 9Z"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linejoin="round"
+                            />
                             <path
-                              d="M69.374 133.645c-.047.54-.088 1.086-.088 1.638v92.557c0 9.954 7.879 17.973 17.66 17.973h94.124c9.782 0 17.661-8.02 17.661-17.973v-92.557c0-.552-.02-1.1-.066-1.638H69.374z"
-                              fill="#55BF9F" />
-                            <path
-                              d="M166.133 207.092c7.865 0 14.241 6.376 14.241 14.241v61.09c0 7.865-6.376 14.24-14.241 14.24-7.864 0-14.24-6.375-14.24-14.24v-61.09c0-7.864 6.376-14.24 14.24-14.24zM46.405 141.882c7.864 0 14.24 6.376 14.24 14.241v61.09c0 7.865-6.376 14.241-14.24 14.241-7.865 0-14.241-6.376-14.241-14.24v-61.09c-.001-7.865 6.375-14.242 14.241-14.242zM221.614 141.882c7.864 0 14.24 6.376 14.24 14.241v61.09c0 7.865-6.376 14.241-14.24 14.241-7.865 0-14.241-6.376-14.241-14.24v-61.09c0-7.865 6.376-14.242 14.241-14.242zM69.79 127.565c.396-28.43 25.21-51.74 57.062-54.812h14.312c31.854 3.073 56.666 26.384 57.062 54.812H69.79z"
-                              fill="#55BF9F" />
-                            <path d="M74.743 70.009l15.022 26.02M193.276 70.009l-15.023 26.02" fill="none"
-                              stroke="#55BF9F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                              d="M114.878 102.087c.012 3.974-3.277 7.205-7.347 7.216-4.068.01-7.376-3.202-7.388-7.176v-.04c-.011-3.975 3.278-7.205 7.347-7.216 4.068-.011 7.376 3.2 7.388 7.176v.04zM169.874 102.087c.012 3.974-3.277 7.205-7.347 7.216-4.068.01-7.376-3.202-7.388-7.176v-.04c-.011-3.975 3.278-7.205 7.347-7.216 4.068-.011 7.376 3.2 7.388 7.176v.04z"
-                              fill="#fff" />
-                          </svg>
-                        </div>
-                        <div class="ci-text">
-                          <h4>Android Development</h4>
-                          <p>Kotlin, Java, OOP, Gradle, Activity, Fragment, Intent, Content Provider, Data Binding, Live
-                            Data, Room, Testing, Android Jetpack</p>
-                        </div>
-                      </div>
-                      <div class="info-block-w-icon">
-                        <div class="ci-icon">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 25" fill="#55BF9F"
-                            data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/headerLogo-arduino.svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M51.25 12.5C51.25 5.60219 45.5773 0 38.6242 0C37.984 0 37.3261 0.0364964 36.6859 0.145985C31.2799 0.930657 27.6522 4.92701 25.625 7.9927C23.5978 4.92701 19.9701 0.930657 14.5641 0.145985C13.9239 0.0547445 13.266 0 12.6258 0C5.65493 0 0 5.60219 0 12.5C0 19.3978 5.67271 25 12.6258 25C13.266 25 13.9239 24.9635 14.5819 24.854C19.9879 24.0511 23.6155 20.0547 25.6428 16.9891C27.67 20.0547 31.2977 24.0511 36.7037 24.854C37.3439 24.9453 38.0018 25 38.6598 25C45.5773 25 51.25 19.3978 51.25 12.5ZM13.9416 20.4744C13.4971 20.5474 13.0525 20.5657 12.6079 20.5657C8.01996 20.5657 4.30336 16.9343 4.30336 12.5C4.30336 8.04744 8.03774 4.4343 12.6257 4.4343C13.0703 4.4343 13.5148 4.4708 13.9594 4.52554C19.0631 5.27372 22.1751 10.4379 23.242 12.5C22.1573 14.5803 19.0275 19.7263 13.9416 20.4744ZM37.2905 4.52554C32.1868 5.27372 29.057 10.4379 28.0079 12.5C29.057 14.562 32.1868 19.7263 37.2905 20.4744C37.735 20.5292 38.1796 20.5657 38.6242 20.5657C43.1944 20.5657 46.9287 16.9525 46.9287 12.5C46.9287 8.06569 43.2121 4.4343 38.6242 4.4343C38.1796 4.4343 37.735 4.4708 37.2905 4.52554ZM9.06449 11.161H16.7004V13.5642H9.06449V11.161ZM42.1479 13.5817H39.5728V16.1077H37.1049V13.5817H34.5298V11.161H37.1049V8.63499H39.5728V11.161H42.1479V13.5817Z"
-                              fill="#55BF9F"></path>
-                          </svg>
-                        </div>
-                        <div class="ci-text">
-                          <h4>Arduino Programming</h4>
-                          <p>C Programming, Electronics, Ultra Sonic Sensor, PIR Sensor, Laser Sensor, ESP32/Node MCU,
-                            Firebase for Microcontroller, </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                                d="M18.5 15.5c.3 1 .8 1.5 1.5 1.5-.7 0-1.2.5-1.5 1.5-.3-1-.8-1.5-1.5-1.5.7 0 1.2-.5 1.5-1.5Z"
+                                fill="currentColor"
+                            /></svg
+                        >AI</span
+                    >
                 </div>
-              </div>
-              <!-- End of Services -->
+            </section>
 
-              <div class="white-space-30"></div>
-
+            <!-- MARQUEE -->
+            <div class="marquee" aria-hidden="true">
+                <div class="track">
+                    <span
+                        >React.js ✦ Next.js ✦ TypeScript ✦ Tailwind ✦ React
+                        Native ✦ Node.js ✦ PostgreSQL ✦ Midtrans ✦ Gemini AI ✦
+                        Cloudflare ✦&nbsp;</span
+                    >
+                    <span
+                        >React.js ✦ Next.js ✦ TypeScript ✦ Tailwind ✦ React
+                        Native ✦ Node.js ✦ PostgreSQL ✦ Midtrans ✦ Gemini AI ✦
+                        Cloudflare ✦&nbsp;</span
+                    >
+                </div>
             </div>
-          </section>
-          <!-- End of About Me Subpage -->
 
-          <!-- Resume Subpage -->
-          <section data-id="resume" class="animated-section">
-            <div class="section-content">
-              <div class="page-title">
-                <h2>Resume</h2>
-              </div>
-
-              <div class="row">
-                <div class="col-xs-12 col-sm-7">
-
-                  <div class="block-title">
-                    <h3>Education</h3>
-                  </div>
-
-                  <div class="timeline timeline-second-style clearfix">
-                    <div class="timeline-item clearfix">
-                      <div class="left-part">
-                        <h5 class="item-period">2018 - 2022</h5>
-                      </div>
-                      <div class="divider"></div>
-                      <div class="right-part">
-                        <h4 class="item-title">Teknik Elektro <br>Universitas Padjadjaran</h4>
-                      </div>
-                    </div>
-
-                    <div class="timeline-item clearfix">
-                      <div class="left-part">
-                        <h5 class="item-period">2015 - 2018</h5>
-                      </div>
-                      <div class="divider"></div>
-                      <div class="right-part">
-                        <h4 class="item-title">SMAN 1 Majalengka</h4>
-                      </div>
-                    </div>
-
-                    <div class="timeline-item clearfix">
-                      <div class="left-part">
-                        <h5 class="item-period">2012 - 2015</h5>
-                      </div>
-                      <div class="divider"></div>
-                      <div class="right-part">
-                        <h4 class="item-title">SMPN 3 Majalengka</h4>
-                      </div>
-                    </div>
-
-                    <div class="timeline-item clearfix">
-                      <div class="left-part">
-                        <h5 class="item-period">2006 - 2012</h5>
-                      </div>
-                      <div class="divider"></div>
-                      <div class="right-part">
-                        <h4 class="item-title">SDN 7 Majalengka</h4>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <div class="white-space-50"></div>
-
-                  <div class="block-title">
-                    <h3>Experience</h3>
-                  </div>
-
-                  <div class="timeline timeline-second-style clearfix">
-                    <div class="timeline-item clearfix">
-                      <div class="left-part">
-                        <h5 class="item-period">Des 2021 - Sekarang</h5>
-                        <span class="item-company">RIPTEK</span>
-                      </div>
-                      <div class="divider"></div>
-                      <div class="right-part">
-                        <h4 class="item-title">Ketua Badan Pengurus Operational Harian</h4>
-                      </div>
-                    </div>
-
-                    <div class="timeline-item clearfix">
-                      <div class="left-part">
-                        <h5 class="item-period">Okt - Des 2021</h5>
-                        <span class="item-company">Projek Robot Covid PPKI</span>
-                      </div>
-                      <div class="divider"></div>
-                      <div class="right-part">
-                        <h4 class="item-title">Ketua Tim Graphical User Interface</h4>
-                      </div>
-                    </div>
-
-                    <div class="timeline-item clearfix">
-                      <div class="left-part">
-                        <h5 class="item-period">Agt - Sep 2021</h5>
-                        <span class="item-company">Chandradimuka Jabar Coding Camp</span>
-                      </div>
-                      <div class="divider"></div>
-                      <div class="right-part">
-                        <h4 class="item-title">React JS Student</h4>
-                      </div>
-                    </div>
-
-                    <div class="timeline-item clearfix">
-                      <div class="left-part">
-                        <h5 class="item-period">Feb - Jun 2021</h5>
-                        <span class="item-company">Bangkit Academy led by Google, Tokopedia, Gojek, Traveloka</span>
-                      </div>
-                      <div class="divider"></div>
-                      <div class="right-part">
-                        <h4 class="item-title">Android Developer Student</h4>
-                      </div>
-                    </div>
-
-                    <div class="timeline-item clearfix">
-                      <div class="left-part">
-                        <h5 class="item-period">Agustus 2020</h5>
-                        <span class="item-company">TED Universitas Gadjah Mada</span>
-                      </div>
-                      <div class="divider"></div>
-                      <div class="right-part">
-                        <h4 class="item-title">Sumo Robot Participant</h4>
-                      </div>
-                    </div>
-
-                    <div class="timeline-item clearfix">
-                      <div class="left-part">
-                        <h5 class="item-period">2020</h5>
-                        <span class="item-company">TE Universitas Padjadjaran</span>
-                      </div>
-                      <div class="divider"></div>
-                      <div class="right-part">
-                        <h4 class="item-title">Asisten Praktikum Elektronika Digital</h4>
-                      </div>
-                    </div>
-
-                    <div class="timeline-item clearfix">
-                      <div class="left-part">
-                        <h5 class="item-period">Agt - Okt 2019</h5>
-                        <span class="item-company">Magneto</span>
-                      </div>
-                      <div class="divider"></div>
-                      <div class="right-part">
-                        <h4 class="item-title">Anggota Tim Penilai Mahasiswa Baru</h4>
-                      </div>
-                    </div>
-
-                    <div class="timeline-item clearfix">
-                      <div class="left-part">
-                        <h5 class="item-period">2019</h5>
-                        <span class="item-company">TE Universitas Padjadjaran</span>
-                      </div>
-                      <div class="divider"></div>
-                      <div class="right-part">
-                        <h4 class="item-title">Asisten Praktikum Teknik Elektro Dasar</h4>
-                      </div>
-                    </div>
-
-
-                  </div>
-
+            <!-- WORK -->
+            <section id="work" class="section">
+                <div class="sec-head reveal">
+                    <p class="kicker">01 — Selected work</p>
+                    <h2>Things I've <em>shipped</em>, not just coded.</h2>
+                    <p class="sub">
+                        Live products with real users, payments & AI. Hover to
+                        tilt — click to visit.
+                    </p>
                 </div>
-
-                <!-- Skills & Certificates -->
-                <div class="col-xs-12 col-sm-5">
-                  <!-- Design Skills -->
-                  <div class="block-title">
-                    <h3>Design <span>Skills</span></h3>
-                  </div>
-
-                  <div class="skills-info skills-second-style">
-                    <!-- Skill 1 -->
-                    <div class="skill clearfix">
-                      <h4>FIGMA</h4>
-                      <div class="skill-value">70%</div>
-                    </div>
-                    <div class="skill-container skill-1">
-                      <div class="skill-percentage"></div>
-                    </div>
-                    <!-- End of Skill 1 -->
-
-                    <!-- Skill 2 -->
-                    <div class="skill clearfix">
-                      <h4>Photoshop</h4>
-                      <div class="skill-value">15%</div>
-                    </div>
-                    <div class="skill-container skill-2">
-                      <div class="skill-percentage"></div>
-                    </div>
-                    <!-- End of Skill 2 -->
-
-                    <!-- Skill 3 -->
-                    <div class="skill clearfix">
-                      <h4>Canva</h4>
-                      <div class="skill-value">70%</div>
-                    </div>
-                    <div class="skill-container skill-3">
-                      <div class="skill-percentage"></div>
-                    </div>
-                    <!-- End of Skill 3 -->
-
-                    <!-- Skill 4 -->
-                    <div class="skill clearfix">
-                      <h4>Ilustrator</h4>
-                      <div class="skill-value">10%</div>
-                    </div>
-                    <div class="skill-container skill-4">
-                      <div class="skill-percentage"></div>
-                    </div>
-                    <!-- End of Skill 4 -->
-
-                  </div>
-                  <!-- End of Design Skills -->
-
-                  <div class="white-space-10"></div>
-
-                  <!-- Coding Skills -->
-                  <div class="block-title">
-                    <h3>Coding <span>Skills</span></h3>
-                  </div>
-
-                  <div class="skills-info skills-second-style">
-                    <!-- Skill 5 -->
-                    <div class="skill clearfix">
-                      <h4>JavaScript</h4>
-                      <div class="skill-value">70%</div>
-                    </div>
-                    <div class="skill-container skill-5">
-                      <div class="skill-percentage"></div>
-                    </div>
-                    <!-- End of Skill 5 -->
-
-                    <!-- Skill 6 -->
-                    <div class="skill clearfix">
-                      <h4>HTML/CSS</h4>
-                      <div class="skill-value">80%</div>
-                    </div>
-                    <div class="skill-container skill-6">
-                      <div class="skill-percentage"></div>
-                    </div>
-                    <!-- End of Skill 6 -->
-
-                    <!-- Skill 7 -->
-                    <div class="skill clearfix">
-                      <h4>React JS</h4>
-                      <div class="skill-value">70%</div>
-                    </div>
-                    <div class="skill-container skill-7">
-                      <div class="skill-percentage"></div>
-                    </div>
-                    <!-- End of Skill 7 -->
-
-                    <!-- Skill 8 -->
-                    <div class="skill clearfix">
-                      <h4>Kotlin</h4>
-                      <div class="skill-value">50%</div>
-                    </div>
-                    <div class="skill-container skill-8">
-                      <div class="skill-percentage"></div>
-                    </div>
-                    <!-- End of Skill 8 -->
-
-                    <!-- Skill 9 -->
-                    <div class="skill clearfix">
-                      <h4>Java</h4>
-                      <div class="skill-value">40%</div>
-                    </div>
-                    <div class="skill-container skill-9">
-                      <div class="skill-percentage"></div>
-                    </div>
-                    <!-- End of Skill 9 -->
-
-
-                    <!-- Skill 10 -->
-                    <div class="skill clearfix">
-                      <h4>C</h4>
-                      <div class="skill-value">40%</div>
-                    </div>
-                    <div class="skill-container skill-10">
-                      <div class="skill-percentage"></div>
-                    </div>
-                    <!-- End of Skill 10 -->
-                  </div>
-                  <!-- End of Coding Skills -->
-
-                  <div class="white-space-10"></div>
-
-                  <!-- Knowledges -->
-                  <div class="block-title">
-                    <h3>Knowledges</h3>
-                  </div>
-
-                  <ul class="knowledges">
-                    <li>Time Management</li>
-                    <li>Problem-Solving</li>
-                    <li>Critical Thinking</li>
-                    <li>Social Networking</li>
-                    <li>Flexibility</li>
-                  </ul>
-                  <!-- End of Knowledges -->
-                </div>
-                <!-- End of Skills & Certificates -->
-              </div>
-
-              <div class="white-space-50"></div>
-
-              <!-- Certificates -->
-              <div class="row">
-                <div class="col-xs-12 col-sm-12">
-                  <div class="block-title">
-                    <h3>Certificates</h3>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <!-- Certificate 1 -->
-                <div class="col-xs-12 col-sm-6">
-                  <a class="certificate-item clearfix"
-                    href="https://drive.google.com/file/d/1qMPE-gKgL0R8GQuuzm0CwSOSrDtZPvyC/view?usp=sharing">
-                    <div class="certi-logo">
-                      <img src="img/clients/jcc.svg" alt="logo">
-                    </div>
-
-                    <div class="certi-content">
-                      <div class="certi-title">
-                        <h4>React JS Student</h4>
-                      </div>
-                      <div class="certi-date">
-                        <span>September 2021</span>
-                      </div>
-                      <div class="certi-company">
-                        <span>Chandradimuka Jabar Coding Camp</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End of Certificate 1 -->
-
-                <!-- Certificate 5 -->
-                <div class="col-xs-12 col-sm-6">
-                  <a class="certificate-item clearfix"
-                    href="https://drive.google.com/file/d/1IGiW7T8S28usjwI1TJuBuJBBZ3ll3JVm/view?usp=sharing">
-                    <div class="certi-logo">
-                      <img src="img/clients/dicoding.png" alt="logo">
-                    </div>
-
-                    <div class="certi-content">
-                      <div class="certi-title">
-                        <h4>Belajar Fundamental Aplikasi Android</h4>
-                      </div>
-                      <div class="certi-date">
-                        <span>Mei 2021</span>
-                      </div>
-                      <div class="certi-company">
-                        <span>Dicoding Indonesia</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End of Certificate 5 -->
-
-                <!-- Certificate 7 -->
-                <div class="col-xs-12 col-sm-6">
-                  <a class="certificate-item clearfix"
-                    href="https://drive.google.com/file/d/18h9V5sousALNyLyS5Kvh62fdUh31fNWe/view?usp=sharing">
-                    <div class="certi-logo">
-                      <img src="img/clients/dicoding.png" alt="logo">
-                    </div>
-
-                    <div class="certi-content">
-                      <div class="certi-title">
-                        <h4>Belajar Dasar Pemrograman Web</h4>
-                      </div>
-                      <div class="certi-date">
-                        <span>Juni 2021</span>
-                      </div>
-                      <div class="certi-company">
-                        <span>Dicoding Indonesia</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End of Certificate 7 -->
-
-                <!-- Certificate 6 -->
-                <div class="col-xs-12 col-sm-6">
-                  <a class="certificate-item clearfix"
-                    href="https://drive.google.com/file/d/1Ml50tGN9yYw1UD-XDiyQ1y0XVzZ3UX2-/view?usp=sharing">
-                    <div class="certi-logo">
-                      <img src="img/clients/dicoding.png" alt="logo">
-                    </div>
-
-                    <div class="certi-content">
-                      <div class="certi-title">
-                        <h4>Belajar Android Jetpack Pro</h4>
-                      </div>
-                      <div class="certi-date">
-                        <span>Juni 2021</span>
-                      </div>
-                      <div class="certi-company">
-                        <span>Dicoding Indonesia</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End of Certificate 6 -->
-
-
-
-                <!-- Certificate 7 -->
-                <div class="col-xs-12 col-sm-6">
-                  <a class="certificate-item clearfix"
-                    href="https://drive.google.com/file/d/1rbT1S8NHxA21aB9Xd-Zw4xCfj2_5X1nv/view?usp=sharing">
-                    <div class="certi-logo">
-                      <img src="img/clients/dicoding.png" alt="logo">
-                    </div>
-
-                    <div class="certi-content">
-                      <div class="certi-title">
-                        <h4>Belajar Membuat Front-End Web untuk Pemula</h4>
-                      </div>
-                      <div class="certi-date">
-                        <span>Juli 2021</span>
-                      </div>
-                      <div class="certi-company">
-                        <span>Dicoding Indonesia</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End of Certificate 7 -->
-
-
-                <!-- Certificate 4 -->
-                <div class="col-xs-12 col-sm-6">
-                  <a class="certificate-item clearfix"
-                    href="https://drive.google.com/file/d/1HV2IIghhTV5zOiScqBWjeskZLfO-Lyqt/view?usp=sharing">
-                    <div class="certi-logo">
-                      <img src="img/clients/dicoding.png" alt="logo">
-                    </div>
-
-                    <div class="certi-content">
-                      <div class="certi-title">
-                        <h4>Belajar Membuat Aplikasi Android untuk Pemula</h4>
-                      </div>
-                      <div class="certi-date">
-                        <span>Maret 2021</span>
-                      </div>
-                      <div class="certi-company">
-                        <span>Dicoding Indonesia</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End of Certificate 4 -->
-
-                <!-- Certificate 4 -->
-                <div class="col-xs-12 col-sm-6">
-                  <a class="certificate-item clearfix"
-                    href="https://drive.google.com/file/d/1IoLvlOa_THll20bi-eqRXwMMxd4iWirk/view?usp=sharing">
-                    <div class="certi-logo">
-                      <img src="img/clients/bangkit.png" alt="logo">
-                    </div>
-
-                    <div class="certi-content">
-                      <div class="certi-title">
-                        <h4>Android Developer Student</h4>
-                      </div>
-                      <div class="certi-date">
-                        <span>Maret 2021</span>
-                      </div>
-                      <div class="certi-company">
-                        <span>Bangkit Academy led by Google, Tokopedia, Gojek Traveloka
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End of Certificate 4 -->
-
-
-              </div>
-              <!-- End of Certificates -->
-            </div>
-          </section>
-          <!-- End of Resume Subpage -->
-
-          <!-- Portfolio Subpage -->
-          <section data-id="portfolio" class="animated-section">
-            <div class="section-content">
-              <div class="page-title">
-                <h2>Portfolio</h2>
-              </div>
-
-              <div class="row">
-                <div class="col-xs-12 col-sm-12">
-                  <!-- Portfolio Content -->
-                  <div class="portfolio-content">
-
-                    <!-- Portfolio Grid -->
-                    <div class="portfolio-grid three-columns">
-
-                      <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                        <div class="portfolio-item-img">
-                          <img src="img/portfolio-resized/1.png" alt="Media Project 2" title="" />
-                          <a href="https://nostalgic-visvesvaraya-f35c97.netlify.app/"></a>
+                <div class="grid work-grid">
+                    <article class="card feat reveal" data-tilt>
+                        <div class="art a1">
+                            <span class="big">01</span>
+                            <div class="orb"></div>
                         </div>
-
-                        <h4 class="name">Launch countdown timer</h4>
-                      </figure>
-
-                      <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                        <div class="portfolio-item-img">
-                          <img src="img/portfolio-resized/2.png" alt="Media Project 2" title="" />
-                          <a href="https://confident-wozniak-ff8487.netlify.app/"></a>
+                        <div class="card-body">
+                            <p class="tags">
+                                SaaS · Next.js · Gemini AI · Midtrans ·
+                                Cloudflare
+                            </p>
+                            <h3>ulangan.online — AI exam platform</h3>
+                            <p>
+                                Online exam SaaS with AI question generation,
+                                automated essay grading, anti-cheat (fullscreen
+                                + tab-switch detection), subscriptions & AI
+                                credits. Turborepo / Preact / Hono / D1 / R2.
+                            </p>
+                            <div class="card-foot">
+                                <a
+                                    href="https://ulangan.online"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >ulangan.online ↗</a
+                                ><span>2026 · Freelance Fullstack</span>
+                            </div>
                         </div>
-
-
-                        <h4 class="name">Easybank Landing Page</h4>
-
-                      </figure>
-
-                      <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                        <div class="portfolio-item-img">
-                          <img src="img/portfolio-resized/3.png" alt="Media Project 2" title="" />
-                          <a href="https://naughty-goldstine-270b0f.netlify.app/"></a>
+                    </article>
+                    <article class="card reveal" data-tilt>
+                        <div class="art a2"><span class="big">02</span></div>
+                        <div class="card-body">
+                            <p class="tags">
+                                E-commerce · React · AI landing generator
+                            </p>
+                            <h3>app.bisajual.com</h3>
+                            <p>
+                                Landing-page-based e-commerce builder + AI
+                                landing generator, subscription billing via
+                                Midtrans. Built at PT Inovasi Bisnis
+                                Berteknologi.
+                            </p>
+                            <div class="card-foot">
+                                <a
+                                    href="https://app.bisajual.com"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >Live app ↗</a
+                                ><span>2024–2026</span>
+                            </div>
                         </div>
-
-
-                        <h4 class="name">JCC: Movie and Game List</h4>
-
-                      </figure>
-
-                      <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                        <div class="portfolio-item-img">
-                          <img src="img/portfolio-resized/4.jpeg" alt="Media Project 2" title="" />
-                          <a href="https://pensive-newton-4c5a20.netlify.app/"></a>
+                    </article>
+                    <article class="card reveal" data-tilt>
+                        <div class="art a3"><span class="big">03</span></div>
+                        <div class="card-body">
+                            <p class="tags">React Native · Mobile · Agents</p>
+                            <h3>Bisajual mobile — agent app</h3>
+                            <p>
+                                React Native app supporting field agents:
+                                catalog, orders & commission tracking, wired to
+                                the same e-commerce backend.
+                            </p>
+                            <div class="card-foot">
+                                <a
+                                    href="https://bisajual.com"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >bisajual.com ↗</a
+                                ><span>2024–2026</span>
+                            </div>
                         </div>
-
-
-                        <h4 class="name">Calculator App</h4>
-
-                      </figure>
-
-                      <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                        <div class="portfolio-item-img">
-                          <img src="img/portfolio-resized/5.jpeg" alt="Media Project 2" title="" />
-                          <a href="https://happy-franklin-da9e84.netlify.app/"></a>
+                    </article>
+                    <article class="card reveal" data-tilt>
+                        <div class="art a4"><span class="big">04</span></div>
+                        <div class="card-body">
+                            <p class="tags">Tauri · React · RAG · Exhibition</p>
+                            <h3>Local AI voice assistant</h3>
+                            <p>
+                                Desktop interface (Tauri + React) for a local AI
+                                voice assistant — realtime audio viz, STT/TTS
+                                streaming, document chat via local RAG.
+                                Exhibited at Kuningan City Mall, Jakarta.
+                            </p>
+                            <div class="card-foot">
+                                <span class="dim">On-premise demo</span
+                                ><span>2026 · Freelance</span>
+                            </div>
                         </div>
-
-
-                        <h4 class="name">Ip Address Tracker</h4>
-
-                      </figure>
-
-                      <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                        <div class="portfolio-item-img">
-                          <img src="img/portfolio-resized/6.jpeg" alt="Media Project 2" title="" />
-                          <a href="https://naughty-hypatia-10dbc2.netlify.app/"></a>
+                    </article>
+                    <article class="card reveal" data-tilt>
+                        <div class="art a5"><span class="big">05</span></div>
+                        <div class="card-body">
+                            <p class="tags">Next.js · PostgreSQL · Education</p>
+                            <h3>SNBT online exam platform</h3>
+                            <p>
+                                Try-out platform for Indonesian university
+                                entrance exams, built while teaching at Rin
+                                Education. Auth, question bank, scoring.
+                            </p>
+                            <div class="card-foot">
+                                <span class="dim">Internal platform</span
+                                ><span>2024–2025</span>
+                            </div>
                         </div>
-
-
-                        <h4 class="name">GUI Robot Covid</h4>
-
-                      </figure>
-
-                      <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                        <div class="portfolio-item-img">
-                          <img src="img/portfolio-resized/7.jpeg" alt="Media Project 2" title="" />
-                          <a href="https://pedantic-shirley-1cdc05.netlify.app/"></a>
+                    </article>
+                    <article class="card reveal" data-tilt>
+                        <div class="art a6"><span class="big">06</span></div>
+                        <div class="card-body">
+                            <p class="tags">IoT · ML · React · Flask</p>
+                            <h3>Blood-pressure estimator + robot GUI</h3>
+                            <p>
+                                Thesis project: PPG-signal BP estimation with
+                                SVR (±7.3 mmHg MAE, n=116), ESP32 sensor, Flask
+                                backend + React/Chakra control interface for a
+                                medical assistive robot.
+                            </p>
+                            <div class="card-foot">
+                                <span class="dim">UNPAD thesis</span
+                                ><span>2022–2024</span>
+                            </div>
                         </div>
+                    </article>
+                </div>
+                <div class="more-row reveal">
+                    <a
+                        class="btn btn-ghost"
+                        href="https://github.com/ukisyauqi"
+                        target="_blank"
+                        rel="noopener"
+                       
+                        >More on GitHub ↗</a
+                    >
+                    <a
+                        class="btn btn-ghost"
+                        href="https://ukisyauqi.github.io"
+                        target="_blank"
+                        rel="noopener"
+                       
+                        >ukisyauqi.github.io ↗</a
+                    >
+                    <a
+                        class="btn btn-ghost"
+                        href="https://docs.bisajual.com"
+                        target="_blank"
+                        rel="noopener"
+                       
+                        >docs.bisajual.com ↗</a
+                    >
+                </div>
+            </section>
 
-
-                        <h4 class="name">Tip Calculator App</h4>
-
-                      </figure>
-
-                      <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                        <div class="portfolio-item-img">
-                          <img src="img/portfolio-resized/8.jpeg" alt="Media Project 2" title="" />
-                          <a href="https://romantic-jones-a84036.netlify.app/"></a>
+            <!-- EXPERIENCE -->
+            <section id="experience" class="section alt">
+                <div class="sec-head reveal">
+                    <p class="kicker">02 — Experience</p>
+                    <h2>Two years of <em>shipping</em>.</h2>
+                </div>
+                <ol class="timeline">
+                    <li class="reveal">
+                        <div class="t-dot"></div>
+                        <div class="t-card">
+                            <span class="t-date"
+                                >Jun 2026 — Jul 2026 · Remote</span
+                            >
+                            <h3>Freelance Fullstack Developer</h3>
+                            <p>
+                                AI exam SaaS (ulangan.online). Gemini generation
+                                + essay grading, Google OAuth, Midtrans
+                                subscriptions, Cloudflare Workers stack.
+                            </p>
                         </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="t-dot"></div>
+                        <div class="t-card">
+                            <span class="t-date"
+                                >May 2026 — Jul 2026 · Remote</span
+                            >
+                            <h3>Freelance Desktop App Developer</h3>
+                            <p>
+                                Tauri + React interface for local AI voice
+                                assistant. Realtime audio viz, RAG document
+                                chat, Tauri↔Rust IPC.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="t-dot"></div>
+                        <div class="t-card">
+                            <span class="t-date"
+                                >Nov 2024 — Feb 2026 · Malang</span
+                            >
+                            <h3>
+                                Frontend & Mobile Developer — PT Inovasi Bisnis
+                                Berteknologi
+                            </h3>
+                            <p>
+                                E-commerce platform, AI landing generator, React
+                                Native agent app, Midtrans payments, docs
+                                (Astro) + company site (Svelte).
+                            </p>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="t-dot"></div>
+                        <div class="t-card">
+                            <span class="t-date"
+                                >Feb 2024 — Feb 2025 · Remote</span
+                            >
+                            <h3>Web Development Instructor — Rin Education</h3>
+                            <p>
+                                Taught HTML→Next.js via Zoom/YouTube Live.
+                                Designed curriculum + built SNBT exam platform
+                                (Next.js + PostgreSQL).
+                            </p>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="t-dot"></div>
+                        <div class="t-card">
+                            <span class="t-date">Sep 2024 — Jan 2025</span>
+                            <h3>Frontend Developer — Sabam Software House</h3>
+                            <p>
+                                Responsive React/Tailwind pages, REST + Server
+                                Actions with Next.js & PostgreSQL,
+                                cross-functional delivery with designers & PMs.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="t-dot"></div>
+                        <div class="t-card">
+                            <span class="t-date"
+                                >Aug 2022 — Jan 2024 · UNPAD</span
+                            >
+                            <h3>Thesis & Teaching Assistantship</h3>
+                            <p>
+                                Led GUI team for medical assistive robot (React
+                                + Chakra). End-to-end BP estimator: Flask +
+                                Firebase + ESP32 + SVR model.
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+            </section>
 
-
-                        <h4 class="name">Time Tracking Dashboard</h4>
-
-                      </figure>
+            <!-- SKILLS -->
+            <section id="skills" class="section">
+                <div class="sec-head reveal">
+                    <p class="kicker">03 — Stack</p>
+                    <h2>Weapons of <em>choice</em>.</h2>
+                    <p class="sub">
+                        Honest inventory — what I use daily vs. what I'd rather
+                        not fake. Full matrix in my CV on request.
+                    </p>
+                </div>
+                <div class="stack-grid">
+                    <div class="stack reveal">
+                        <h4>Frontend</h4>
+                        <div class="chips">
+                            <span>React.js</span><span>Next.js</span
+                            ><span>TypeScript</span><span>JavaScript</span
+                            ><span>Tailwind</span><span>Astro</span
+                            ><span>Svelte</span><span>Chakra UI</span
+                            ><span>MUI</span>
+                        </div>
+                        <div class="meter"><i style="--w: 92%"></i></div>
                     </div>
-                  </div>
-                  <!-- End of Portfolio Content -->
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- End of Portfolio Subpage -->
-
-
-          <!-- Contact Subpage -->
-          <section data-id="contact" class="animated-section">
-            <div class="section-content">
-              <div class="page-title">
-                <h2>Contact</h2>
-              </div>
-
-              <div class="row">
-                <!-- Contact Info -->
-                <div class="col-xs-12 col-sm-4">
-
-                  <a class="lm-info-block gray-default" href="https://goo.gl/maps/5bf37SL42zHWfHGu8" target="_blank">
-                    <i class="lnr lnr-map-marker"></i>
-                    <h4>Majalengka, Jawa Barat</h4>
-                    <span class="lm-info-block-value"></span>
-                    <span class="lm-info-block-text"></span>
-                  </a>
-
-                  <a class="lm-info-block gray-default"
-                    href="https://wa.me/+6282375779665?text=hello%20I'm%20interested%20to%20working%20with%20you"
-                    target="_blank">
-                    <i class="lnr lnr-phone-handset"></i>
-                    <h4>0823 7577 9665</h4>
-                    <span class="lm-info-block-value"></span>
-                    <span class="lm-info-block-text"></span>
-                  </a>
-
-                  <a class="lm-info-block gray-default" href="mailto:ukisyauqi@gmail.com" target="_blank">
-                    <i class="lnr lnr-envelope"></i>
-                    <h4>ukisyauqi@gmail.com</h4>
-                    <span class="lm-info-block-value"></span>
-                    <span class="lm-info-block-text"></span>
-                  </a>
-
-                  <a class="lm-info-block gray-default" href="https://www.linkedin.com/in/muhamad-syauqi-fadhlika/"
-                    target="_blank">
-                    <?xml version="1.0" ?><svg version="1.1" viewBox="0 0 60 60" width="35px"
-                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <title />
-                      <desc />
-                      <defs />
-                      <g fill="none" fill-rule="evenodd" id="Page-1" stroke="#0B9C71" stroke-linejoin="round"
-                        stroke-width="1">
-                        <g id="Linkedin" stroke="" stroke-width="2" transform="translate(1.000000, 1.000000)">
-                          <path
-                            d="M51,33.6902 L51,49.0002 L41.146,49.0002 L41.146,34.7492 C41.146,31.0202 39.606,28.4772 36.217,28.4772 C33.623,28.4772 32.179,30.1942 31.511,31.8462 C31.257,32.4442 31.298,33.2702 31.298,34.1002 L31.298,49.0002 L21.535,49.0002 C21.535,49.0002 21.662,23.7602 21.535,21.4652 L31.298,21.4652 L31.298,25.7872 C31.875,23.8972 34.996,21.2022 39.971,21.2022 C46.147,21.2022 51,25.1592 51,33.6902 L51,33.6902 Z"
-                            id="Stroke-18" />
-                          <polygon id="Stroke-19" points="7.543 49 16.231 49 16.231 21.466 7.543 21.466" />
-                          <path
-                            d="M16.7815,13.3799 C16.7815,15.7979 14.9335,17.7149 11.9735,17.7149 L11.9135,17.7149 C9.0595,17.7149 7.2115,15.8069 7.2115,13.3849 C7.2115,10.9159 9.1145,9.0499 12.0285,9.0499 C14.9335,9.0499 16.7215,10.9119 16.7815,13.3799 L16.7815,13.3799 Z"
-                            id="Stroke-20" />
-                          <path
-                            d="M54,58 L4,58 C1.791,58 0,56.209 0,54 L0,4 C0,1.791 1.791,0 4,0 L54,0 C56.209,0 58,1.791 58,4 L58,54 C58,56.209 56.209,58 54,58 L54,58 Z"
-                            id="Stroke-103" />
-                        </g>
-                      </g>
-                    </svg>
-                    <h4>Muhamad Syauqi Fadhlika</h4>
-                    <span class="lm-info-block-value"></span>
-                    <span class="lm-info-block-text"></span>
-                  </a>
-
-
-                </div>
-                <!-- End of Contact Info -->
-
-                <!-- Contact Form -->
-                <div class="col-xs-12 col-sm-8">
-                  <div class="block-title">
-                    <h3>How Can I <span>Help You?</span></h3>
-                  </div>
-
-                  <form action="https://formspree.io/f/myyownaa" method="POST" id="my-form">
-
-                    <div id="status"></div>
-                    <div class="controls two-columns">
-                      <div class="fields clearfix">
-                        <div class="left-column">
-                          <div class="form-group form-group-with-icon">
-                            <input type="text" name="name" class="form-control" placeholder="" required="required"
-                              data-error="Name is required.">
-                            <label>Full Name</label>
-                            <div class="form-control-border"></div>
-                            <div class="help-block with-errors"></div>
-                          </div>
-
-                          <div class="form-group form-group-with-icon">
-                            <input type="email" name="email" class="form-control" placeholder="" required="required"
-                              data-error="Valid email is required.">
-                            <label>Email Address</label>
-                            <div class="form-control-border"></div>
-                            <div class="help-block with-errors"></div>
-                          </div>
-
-                          <div class="form-group form-group-with-icon">
-                            <input type="text" name="subject" class="form-control" placeholder="" required="required"
-                              data-error="Subject is required.">
-                            <label>Subject</label>
-                            <div class="form-control-border"></div>
-                            <div class="help-block with-errors"></div>
-                          </div>
+                    <div class="stack reveal">
+                        <h4>Backend & Data</h4>
+                        <div class="chips">
+                            <span>Node.js</span><span>Express</span
+                            ><span>Hono</span><span>PostgreSQL</span
+                            ><span>REST</span><span>Firebase</span
+                            ><span>Cloudflare D1/R2</span><span>Python</span
+                            ><span>PHP</span>
                         </div>
-                        <div class="right-column">
-                          <div class="form-group form-group-with-icon">
-                            <textarea name="message" class="form-control" placeholder="" rows="7" required="required"
-                              data-error="Please, leave me a message."></textarea>
-                            <label>Message</label>
-                            <div class="form-control-border"></div>
-                            <div class="help-block with-errors"></div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <button type="submit">Send Message</button>
+                        <div class="meter"><i style="--w: 78%"></i></div>
                     </div>
-                  </form>
+                    <div class="stack reveal">
+                        <h4>Mobile & Desktop</h4>
+                        <div class="chips">
+                            <span>React Native</span><span>Tauri</span
+                            ><span>Expo</span>
+                        </div>
+                        <div class="meter"><i style="--w: 65%"></i></div>
+                    </div>
+                    <div class="stack reveal">
+                        <h4>Tools & AI</h4>
+                        <div class="chips">
+                            <span>Git/GitHub</span><span>Figma</span
+                            ><span>Postman</span><span>Vercel</span
+                            ><span>Midtrans</span><span>Gemini API</span
+                            ><span>RAG</span><span>SEO</span>
+                        </div>
+                        <div class="meter"><i style="--w: 85%"></i></div>
+                    </div>
                 </div>
-                <!-- End of Contact Form -->
-              </div>
+                <div class="certs">
+                    <div class="cert reveal">
+                        <strong>Harisenin</strong
+                        ><span>Fullstack Bootcamp · 2024 · GPA 4.00</span>
+                    </div>
+                    <div class="cert reveal">
+                        <strong>Sanbercode</strong
+                        ><span>Next.js Bootcamp · 2023</span>
+                    </div>
+                    <div class="cert reveal">
+                        <strong>JCC</strong><span>React Bootcamp · 2021</span>
+                    </div>
+                    <div class="cert reveal">
+                        <strong>Bangkit</strong
+                        ><span>Mobile (Kotlin) · 2021</span>
+                    </div>
+                    <div class="cert reveal">
+                        <strong>UNPAD</strong
+                        ><span>B.Eng Electrical · 2018–2024 · 3.40</span>
+                    </div>
+                </div>
+            </section>
 
-            </div>
-          </section>
-          <!-- End of Contact Subpage -->
-        </div>
-      </div>
+            <!-- ABOUT -->
+            <section id="about" class="section alt">
+                <div class="about-grid">
+                    <div class="reveal">
+                        <p class="kicker">04 — About</p>
+                        <h2>
+                            Electrical engineer who fell for the
+                            <em>browser</em>.
+                        </h2>
+                        <p class="sub">
+                            I started in circuits and signals, then discovered I
+                            love interfaces humans touch every day. Now I do
+                            end-to-end product: design → frontend → API → deploy
+                            — plus teaching, which forces me to actually
+                            understand things.
+                        </p>
+                        <ul class="facts">
+                            <li>
+                                <b>Based</b> Bandung, ID — open onsite / hybrid
+                                / remote
+                            </li>
+                            <li>
+                                <b>Notice</b> immediately · <b>Languages</b> ID
+                                native, EN professional (writing)
+                            </li>
+                            <li>
+                                <b>Currently</b> freelancing + hunting full-time
+                                Frontend / Fullstack roles
+                            </li>
+                            <li>
+                                <b>Off-screen</b> mentoring students, tinkering
+                                with AI + Cloudflare stack
+                            </li>
+                        </ul>
+                        <div class="cta-row">
+                            <a
+                                class="btn btn-lime"
+                                href="mailto:ukisyauqi@gmail.com?subject=Interview%20invitation"
+                               
+                                >Invite to interview ↗</a
+                            >
+                            <a
+                                class="btn btn-ghost"
+                                href="https://www.linkedin.com/in/muhamad-syauqi-fadhlika/"
+                                target="_blank"
+                                rel="noopener"
+                               
+                                >LinkedIn ↗</a
+                            >
+                        </div>
+                    </div>
+                    <div class="code-card reveal" data-tilt>
+                        <div class="code-bar">
+                            <i></i><i></i><i></i><span>uki.ts — who am i</span>
+                        </div>
+                        <pre><code><span class="k">const</span> uki = {
+  role: [<span class="s">"frontend"</span>, <span class="s">"fullstack"</span>],
+  core: [<span class="s">"react"</span>, <span class="s">"next"</span>, <span class="s">"typescript"</span>],
+  backend: [<span class="s">"node"</span>, <span class="s">"postgres"</span>, <span class="s">"rest"</span>],
+  mobile: <span class="s">"react-native"</span>,
+  ai: <span class="s">"gemini + rag"</span>,
+  payments: <span class="s">"midtrans"</span>,
+  motto: <span class="s">"ship, measure, iterate"</span>,
+  hireable: <span class="k">true</span>,
+};</code></pre>
+                    </div>
+                </div>
+            </section>
 
-    </div>
-  </div>
+            <!-- CONTACT -->
+            <section id="contact" class="section contact">
+                <p class="kicker reveal">05 — Contact</p>
+                <h2 class="giant reveal">
+                    LET'S BUILD<br /><em>something fast.</em>
+                </h2>
+                <p class="sub reveal">
+                    Currently at ~Rp 6jt, expecting ~Rp 7jt (flexible to your
+                    range). No notice period. Yes to onsite / late hours /
+                    relocation within Java.
+                </p>
+                <div class="contact-grid">
+                    <a
+                        class="c-card reveal"
+                        href="mailto:ukisyauqi@gmail.com"
+                       
+                        ><span>Email</span
+                        ><strong>ukisyauqi@gmail.com ↗</strong></a
+                    >
+                    <a
+                        class="c-card reveal"
+                        href="https://wa.me/6285173279794"
+                        target="_blank"
+                        rel="noopener"
+                       
+                        ><span>WhatsApp</span
+                        ><strong>+62 851-7327-9794 ↗</strong></a
+                    >
+                    <a
+                        class="c-card reveal"
+                        href="https://github.com/ukisyauqi"
+                        target="_blank"
+                        rel="noopener"
+                       
+                        ><span>GitHub</span><strong>@ukisyauqi ↗</strong></a
+                    >
+                    <a
+                        class="c-card reveal"
+                        href="https://www.linkedin.com/in/muhamad-syauqi-fadhlika/"
+                        target="_blank"
+                        rel="noopener"
+                       
+                        ><span>LinkedIn</span
+                        ><strong>syauqi-fadhlika ↗</strong></a
+                    >
+                </div>
+            </section>
+        </main>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/modernizr.custom.js"></script>
-  <script src="js/animating.js"></script>
+        <footer>
+            <span
+                >© 2026 Muhamad Syauqi Fadhlika — crafted with vanilla JS</span
+            >
+            <span class="mono"
+                >BANDUNG <span id="clock2">--:--:--</span> ·
+                <a href="#top">back to top ↑</a></span
+            >
+        </footer>
 
-  <script src="js/imagesloaded.pkgd.min.js"></script>
-  <script src='https://www.google.com/recaptcha/api.js'></script>
-
-  <script src='js/perfect-scrollbar.min.js'></script>
-  <script src='js/jquery.shuffle.min.js'></script>
-  <script src='js/masonry.pkgd.min.js'></script>
-  <script src='js/owl.carousel.min.js'></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
-  <script src="js/jquery.googlemap.js"></script>
-  <script src="js/validator.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+        <script src="app.js"></script>
+    </body>
 </html>
